@@ -5,117 +5,207 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>I Sgangheraa – Guggen inclusiva per il Rabadan</title>
   <meta name="description" content="Una Guggen aperta a tuttə: sfilare al Rabadan senza spendere soldi e senza impegni pesanti. Vieni come sei, suona come vuoi." />
-  <meta property="og:title" content="I Sgangheraa – Guggen inclusiva" />
-  <meta property="og:description" content="Diamo a tutti la possibilità di partecipare al corteo Rabadan senza investire soldi e/o tempo." />
-  <meta property="og:type" content="website" />
+
   <style>
     :root {
-      --bg: #0b0b10;
-      --fg: #f5f7fb;
-      --muted: #aab2c0;
-      --accent: #ffcc33;
-      --accent-2: #7cf0ae;
-      --card: #14141d;
+      --bg: #fff9f2;
+      --text: #202020;
+      --accent: #ff7300;
+      --accent2: #ffcc33;
+      --accent3: #7cf0ae;
       --radius: 18px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --shadow: 0 8px 20px rgba(0,0,0,.15);
     }
-    html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 12px 0; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .logo { width:48px; height:48px; border-radius:12px; background:linear-gradient(135deg, var(--accent), var(--accent-2)); display:grid; place-items:center; color:#111; font-weight:800; box-shadow: var(--shadow); }
-    .brand h1 { font-size: 1.25rem; margin:0; }
-    nav a { margin-left: 14px; font-weight:600; color:var(--fg); opacity:.9; }
-    .hero { margin-top: 32px; padding: 48px 24px; background: radial-gradient(1200px 600px at 20% -10%, rgba(255,204,51,.15), transparent), radial-gradient(1000px 500px at 100% 0%, rgba(124,240,174,.10), transparent); border-radius: var(--radius); box-shadow: var(--shadow); }
-    .hero h2 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 0 0 12px 0; line-height: 1.1; }
-    .hero p { font-size: clamp(1.05rem, 2.2vw, 1.25rem); color: var(--muted); margin: 0 0 22px 0; }
-    .badges { display:flex; flex-wrap: wrap; gap:10px; margin: 16px 0 26px; }
-    .badge { background: var(--card); color: var(--fg); border: 1px solid rgba(255,255,255,.08); padding: 8px 12px; border-radius: 999px; font-size: .95rem; }
-    .cta-row { display:flex; flex-wrap:wrap; gap:12px; }
-    .btn { display:inline-block; padding: 12px 18px; border-radius: 999px; font-weight: 700; box-shadow: var(--shadow); }
-    .btn-primary { background: var(--accent); color: #111; }
-    .btn-outline { border:1px solid rgba(255,255,255,.25); color: var(--fg); }
-    .grid { display:grid; grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) ); gap:18px; margin-top: 28px; }
-    .card { background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
-    .card h3 { margin: 0 0 8px 0; font-size: 1.15rem; }
-    .card p { margin: 0; color: var(--muted); }
-    .motto { margin: 46px 0 18px; font-size: clamp(1.2rem, 3vw, 1.6rem); font-weight: 800; color: var(--accent); }
-    .section { margin-top: 48px; }
-    .section h2 { margin: 0 0 8px 0; font-size: 1.5rem; }
-    .section p { color: var(--muted); }
-    .faq details { background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); padding: 14px 16px; margin: 10px 0; }
-    .faq summary { cursor: pointer; font-weight: 700; }
-    footer { margin-top: 54px; padding: 24px 0; color: var(--muted); font-size: .95rem; border-top: 1px solid rgba(255,255,255,.08) }
-    .foot-grid { display:grid; grid-template-columns: 1fr; gap: 16px; }
-    @media (min-width: 740px) { .foot-grid { grid-template-columns: 2fr 1fr; } }
-    small { color: var(--muted); }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, sans-serif;
+      background: var(--bg) url('https://www.transparenttextures.com/patterns/confetti.png');
+      background-size: 400px;
+      color: var(--text);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    img.logo {
+      max-width: 300px;
+      margin: 40px auto 20px;
+      display: block;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,.15));
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin: 0;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      margin: 10px 0;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .motto {
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      margin: 10px auto 24px;
+      font-weight: 900;
+      color: #000;
+      text-shadow: 0 0 10px rgba(255,200,0,.5);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.2rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #111;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform .2s;
+    }
+
+    .cta:hover {
+      transform: scale(1.05);
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      border: 3px solid var(--accent2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .faq {
+      background: #fff3d9;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .faq details {
+      max-width: 700px;
+      margin: 10px auto;
+      background: white;
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: left;
+    }
+
+    .faq summary {
+      font-weight: 700;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 24px;
+      background: #f7eecf;
+      font-size: .95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden="true">SG</div>
-        <h1>I Sgangheraa</h1>
-      </div>
-      <nav>
-        <a href="#valori">Valori</a>
-        <a href="#come-funziona">Come funziona</a>
-        <a href="#faq">FAQ</a>
-        <a href="#partecipa" class="btn btn-primary">Partecipa</a>
-      </nav>
-    </header>
 
-    <section class="hero" role="banner">
-      <h2>La Guggen inclusiva per il Rabadan</h2>
-      <p>Vogliamo dare a tuttə la possibilità di sfilare al corteo del Rabadan <strong>senza investire soldi e/o tempo</strong>. Vieni come sei, suona come vuoi, divertiti con noi.</p>
-      <div class="badges">
-        <span class="badge">No quota d’iscrizione</span>
-        <span class="badge">Strumenti liberi o improvvisati</span>
-        <span class="badge">Nessun requisito musicale</span>
-        <span class="badge">Organizzazione leggera</span>
-      </div>
-      <div class="cta-row">
-        <a id="partecipa" href="https://forms.gle/tuo-link-google-form" class="btn btn-primary">Iscriviti in 30 secondi</a>
-        <a href="#valori" class="btn btn-outline">Scopri i nostri valori</a>
-      </div>
-      <p class="motto">«Se te gh’è fià, te po sfilaa.»</p>
-    </section>
+  <!-- LOGO -->
+  <img src="36B072D6-93D5-4536-93D0-DBE9D4705F8F.png" alt="Logo I Sgangheraa" class="logo" />
 
-    <section id="valori" class="section">
-      <h2>I nostri valori</h2>
-      <div class="grid">
-        <div class="card"><h3>Inclusione radicale</h3><p>Nessuna selezione: contano la voglia di esserci e il sorriso.</p></div>
-        <div class="card"><h3>Costo zero</h3><p>Riciclo, creatività e fai-da-te sono i benvenuti.</p></div>
-        <div class="card"><h3>Tempo leggero</h3><p>Prove minime e coordinate semplici. Chi può, viene; chi non può, nessun problema.</p></div>
-        <div class="card"><h3>Spirito Rabadan</h3><p>Allegria, rispetto e sicurezza prima di tutto.</p></div>
-      </div>
-    </section>
+  <h1>La Guggen inclusiva per il Rabadan</h1>
 
-    <section id="faq" class="section faq">
-      <h2>FAQ</h2>
-      <details><summary>Devo saper suonare?</summary><p>No, basta seguire il gruppo e tenere il tempo.</p></details>
-      <details><summary>Quanto devo pagare?</summary><p>Zero! Nessuna quota obbligatoria.</p></details>
-      <details><summary>Serve una divisa?</summary><p>No, costume libero e sicuro.</p></details>
-    </section>
+  <div class="motto">🎺 SE TE GH’È FIÀ, TE PÒ SFILAA! 🎭</div>
 
-    <footer>
-      <div class="foot-grid">
-        <div>
-          <strong>Contatti</strong><br />
-          <a href="mailto:info@isgangheraa.ch">info@isgangheraa.ch</a><br />
-          IG: <a href="#">@isgangheraa</a>
-        </div>
-        <div>
-          <strong>Trasparenza</strong>
-          <p><small>Progetto no-profit, organizzazione orizzontale.</small></p>
-        </div>
-      </div>
-      <p><small>© <span id="year"></span> I Sgangheraa · Bellinzona</small></p>
-    </footer>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <p class="intro">
+    Vogliamo dare a tuttə la possibilità di sfilare al corteo del Rabadan 
+    <strong>senza investire soldi e senza impegni pesanti</strong>.  
+    Vieni come sei, suona come vuoi, divertiti con noi!  
+    <br><br>
+    Ti aspettiamo al <strong>Rabadan di Bellinzona 2026!</strong>
+  </p>
+
+  <!-- BOTTONE EMAIL -->
+  <a href="mailto:argenteo-80pregio@icloud.com?subject=Voglio%20partecipare%20alla%20Guggen%20I%20Sgangheraa&body=Ciao!%0D%0AMi%20chiamo%20_____%0D%0AIl%20mio%20numero%20è%20_____%0D%0AGrazie!" class="cta">
+    📩 Scrivici per partecipare
+  </a>
+
+  <!-- VALORI -->
+  <section class="values">
+    <div class="card">
+      <h3>Inclusione radicale</h3>
+      <p>Nessuna selezione: conta la voglia di esserci e il sorriso.</p>
+    </div>
+    <div class="card">
+      <h3>Costo zero</h3>
+      <p>Riciclo, creatività e fai-da-te sono i benvenuti.</p>
+    </div>
+    <div class="card">
+      <h3>Tempo leggero</h3>
+      <p>Prove minime e coordinate semplici. Chi può, viene; chi non può, nessun problema.</p>
+    </div>
+    <div class="card">
+      <h3>Spirito Rabadan</h3>
+      <p>Allegria, rispetto e sicurezza prima di tutto.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Devo saper suonare?</summary>
+      <p>No, devi solo portare uno strumento!</p>
+    </details>
+    <details>
+      <summary>Serve una divisa?</summary>
+      <p>No, costume libero e sicuro.</p>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Contatti:</strong> <a href="mailto:argenteo-80pregio@icloud.com">argenteo-80pregio@icloud.com</a></p>
+    <p>Progetto no-profit, organizzazione orizzontale.</p>
+    <p>© <span id="year"></span> I Sgangheraa · Bellinzona</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
