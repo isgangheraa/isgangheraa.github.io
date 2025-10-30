@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>I Sgangheraa – Guggen inclusiva per il Rabadan</title>
-  <meta name="description" content="Una Guggen aperta a tuttə: sfilare al Rabadan senza spendere soldi e senza impegni pesanti. Vieni come sei, suona come vuoi." />
+  <meta name="description" content="Un gruppo libero e inclusivo per sfilare al Rabadan senza costi né impegni. Vieni come sei, suona come vuoi!" />
 
   <style>
     :root {
@@ -41,10 +41,10 @@
     }
 
     h2 {
-      font-size: clamp(2.2rem, 6vw, 3.4rem);
-      margin: 10px 0;
+      font-size: clamp(2rem, 5vw, 3rem);
       color: var(--accent);
       font-weight: 800;
+      margin-top: 40px;
     }
 
     .motto {
@@ -67,6 +67,15 @@
       font-size: 1.2rem;
     }
 
+    .dates {
+      background: #fff3d9;
+      padding: 15px;
+      margin: 0 auto 20px;
+      border-radius: var(--radius);
+      display: inline-block;
+      box-shadow: var(--shadow);
+    }
+
     .cta {
       display: inline-block;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
@@ -81,6 +90,18 @@
 
     .cta:hover {
       transform: scale(1.05);
+    }
+
+    #countdown {
+      font-size: 1.2rem;
+      margin: 20px auto 40px;
+      padding: 15px 25px;
+      background: #fff3d9;
+      border-radius: var(--radius);
+      display: inline-block;
+      box-shadow: var(--shadow);
+      font-weight: 600;
+      color: var(--accent);
     }
 
     .values {
@@ -100,12 +121,7 @@
       border: 3px solid var(--accent2);
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: var(--accent);
-    }
-
-    .faq {
+    .faq, .about, .info {
       background: #fff3d9;
       padding: 40px 20px;
       margin-top: 40px;
@@ -128,8 +144,25 @@
       font-size: 1.1rem;
     }
 
+    .banner {
+      margin-top: 50px;
+      background: var(--accent);
+      color: white;
+      padding: 25px 10px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      border-radius: 0;
+      transition: background .3s ease;
+    }
+
+    .banner:hover {
+      background: #ffa733;
+    }
+
     footer {
-      margin-top: 60px;
+      margin-top: 40px;
       padding: 24px;
       background: #f7eecf;
       font-size: .95rem;
@@ -148,21 +181,27 @@
   <img src="36B072D6-93D5-4536-93D0-DBE9D4705F8F.png" alt="Logo I Sgangheraa" class="logo" />
 
   <h1>La Guggen inclusiva per il Rabadan</h1>
-
   <div class="motto">🎺 SE TE GH’È FIÀ, TE PÒ SFILAA! 🎭</div>
+
+  <div class="dates">
+    📅 12–17 febbraio 2026<br>
+    🕐 Grand Corteo Mascherato: <strong>domenica 15 febbraio 2026 alle 13:30</strong>
+  </div>
 
   <p class="intro">
     Vogliamo dare a tutti la possibilità di sfilare al corteo del Rabadan 
-    <strong>senza investire soldi e senza impegni pesanti</strong>.  
+    <strong>senza investire soldi e senza impegni pesanti</strong>.<br>
     Vieni come sei, suona come vuoi, divertiti con noi!  
-    <br><br>
-    Ti aspettiamo al <strong>Rabadan di Bellinzona 2026!</strong>
+    <br><br>Ti aspettiamo al <strong>Rabadan di Bellinzona 2026!</strong>
   </p>
 
   <!-- BOTTONE EMAIL -->
   <a href="mailto:argenteo-80pregio@icloud.com?subject=Voglio%20partecipare%20alla%20Guggen%20I%20Sgangheraa&body=Ciao!%0D%0AMi%20chiamo%20_____%0D%0AIl%20mio%20numero%20è%20_____%0D%0AGrazie!" class="cta">
     📩 Scrivici per partecipare
   </a>
+
+  <!-- COUNTDOWN -->
+  <div id="countdown">⏳ Calcolo del tempo rimanente...</div>
 
   <!-- VALORI -->
   <section class="values">
@@ -174,41 +213,58 @@
       <h3>Costo zero</h3>
       <p>Riciclo, creatività e fai-da-te sono i benvenuti.</p>
     </div>
-<div class="card">
-  <h3>Tempo leggero</h3>
-  <p>Nessuna prova, mai.  
-  L’unico impegno è divertirsi e farsi trascinare dal ritmo del corteo.</p>
-</div>
+    <div class="card">
+      <h3>Tempo leggero</h3>
+      <p>Nessuna prova, mai. L’unico impegno è divertirsi e farsi trascinare dal ritmo del corteo.</p>
+    </div>
     <div class="card">
       <h3>Spirito Rabadan</h3>
       <p>Allegria, rispetto e sicurezza prima di tutto.</p>
     </div>
   </section>
 
-<section class="faq">
-  <h2>FAQ</h2>
-  <details>
-    <summary>Devo saper suonare?</summary>
-    <p>No, devi solo portare uno strumento!</p>
-  </details>
-  <details>
-    <summary>Devo fare un costume?</summary>
-    <p>No, costume libero, basta che sia da carnevale.</p>
-  </details>
-  <details>
-    <summary>Ci sono tasse da pagare?</summary>
-    <p>No, nessuna tassa!  
-    L’unico costo è il braccialetto necessario per partecipare al corteo del Rabadan.</p>
-  </details>
-  <details>
-  <summary>Quali impegni ha la Guggen?</summary>
-  <p>Zero stress e zero calendario!  
-  Le Guggen tradizionali partecipano a molti eventi, sfilate e serate,  
-  ma noi abbiamo scelto un’altra filosofia:  
-  <strong>I Sgangheraa partecipano solo al Grand Corteo Mascherato della domenica</strong>.  
-  </p>
-  </details>
-</section>
+  <!-- CHI SIAMO DAVVERO -->
+  <section class="about">
+    <h2>Chi siamo davvero</h2>
+    <p>Non siamo (ancora) una Guggen ufficiale, ma un gruppo che vuole diventarlo!  
+    Partecipiamo al Rabadan 2026 come gruppo libero nel <strong>Grand Corteo Mascherato della domenica</strong>.</p>
+  </section>
+
+  <!-- INFORMAZIONI IMPORTANTI -->
+  <section class="info">
+    <h2>Informazioni importanti</h2>
+    <p>📋 Termine per iscrizione al corteo: <strong>31 dicembre 2025</strong><br>
+       🍝 Termine per adesione al pranzo di domenica: <strong>31 gennaio 2026</strong></p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Devo saper suonare?</summary>
+      <p>No, devi solo portare uno strumento!</p>
+    </details>
+    <details>
+      <summary>Serve una divisa?</summary>
+      <p>No, costume libero e sicuro.</p>
+    </details>
+    <details>
+      <summary>Ci sono tasse da pagare?</summary>
+      <p>No, nessuna tassa! L’unico costo è il braccialetto necessario per partecipare al corteo del Rabadan.</p>
+    </details>
+    <details>
+      <summary>🎭 Quali impegni ci sono?</summary>
+      <p>Solo divertimento, nessun obbligo!  
+      Le Guggen tradizionali suonano ovunque, ma noi preferiamo la semplicità:  
+      <strong>I Sgangheraa sfilano solo al Grand Corteo Mascherato della domenica</strong>.  
+      Niente prove, niente tournée, solo un grande giorno di festa al Rabadan! 🎉</p>
+    </details>
+  </section>
+
+  <!-- BANNER RABADAN -->
+  <a href="https://rabadan.ch" target="_blank" class="banner">
+    🎭 Scopri il Rabadan ufficiale – 12–17 febbraio 2026 🎉
+  </a>
 
   <!-- FOOTER -->
   <footer>
@@ -217,8 +273,33 @@
     <p>© <span id="year"></span> I Sgangheraa · Bellinzona</p>
   </footer>
 
+  <!-- SCRIPT COUNTDOWN -->
   <script>
+    const countdown = document.getElementById('countdown');
+    const eventDate = new Date("February 15, 2026 13:30:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = eventDate - now;
+
+      if (diff <= 0) {
+        countdown.textContent = "🎉 È il grande giorno! Ci vediamo al corteo!";
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+      countdown.textContent = `⏳ Mancano ${days} giorni, ${hours} ore e ${minutes} minuti al Grand Corteo Mascherato!`;
+    }
+
+    const timer = setInterval(updateCountdown, 60000);
+    updateCountdown();
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
