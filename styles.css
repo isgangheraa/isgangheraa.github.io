@@ -1,1 +1,203 @@
+    :root {
+      --bg: #fff9f2;
+      --text: #202020;
+      --accent: #ff7300;
+      --accent2: #ffcc33;
+      --accent3: #7cf0ae;
+      --radius: 18px;
+      --shadow: 0 8px 20px rgba(0,0,0,.15);
+    }
 
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, sans-serif;
+      background: var(--bg) url('https://www.transparenttextures.com/patterns/confetti.png');
+      background-size: 400px;
+      color: var(--text);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    img.logo {
+      max-width: 300px;
+      margin: 40px auto 20px;
+      display: block;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,.15));
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin: 0;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--accent);
+      font-weight: 800;
+      margin-top: 40px;
+    }
+
+    .motto {
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      margin: 10px auto 24px;
+      font-weight: 900;
+      color: #000;
+      text-shadow: 0 0 10px rgba(255,200,0,.5);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.2rem;
+    }
+
+    .dates {
+      background: #fff3d9;
+      padding: 15px;
+      margin: 0 auto 20px;
+      border-radius: var(--radius);
+      display: inline-block;
+      box-shadow: var(--shadow);
+    }
+
+    .corteo-box {
+      background: #e9f7f0;
+      border-radius: var(--radius);
+      padding: 20px;
+      max-width: 700px;
+      margin: 20px auto 30px;
+      box-shadow:
+        0 0 0 3px rgba(124, 240, 174, 0.35),
+        var(--shadow);
+    }
+
+    .cta {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #111;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform .2s;
+    }
+
+    .cta:hover {
+      transform: scale(1.05);
+    }
+
+    #countdown {
+      font-size: 1.2rem;
+      margin: 25px auto 50px;
+      padding: 20px 30px;
+      background: #fff3d9;
+      border-radius: var(--radius);
+      display: block;
+      width: fit-content;
+      box-shadow: var(--shadow);
+      font-weight: 600;
+      color: var(--accent);
+      text-align: center;
+    }
+
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      border: 3px solid var(--accent2);
+    }
+
+    .faq, .about, .info {
+      background: #fff3d9;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .faq details {
+      max-width: 700px;
+      margin: 10px auto;
+      background: white;
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: left;
+    }
+
+    .faq summary {
+      font-weight: 700;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .banner {
+      margin-top: 50px;
+      background: var(--accent);
+      color: white;
+      padding: 25px 10px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      border-radius: 0;
+      transition: background .3s ease;
+    }
+
+    .banner:hover {
+      background: #ffa733;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 24px;
+      background: #f7eecf;
+      font-size: .95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .media {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    
+    .video-wrap {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 */
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #000;
+    }
+    
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
