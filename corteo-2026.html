@@ -1,1 +1,305 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corteo 2026 – I Sgangheraa</title>
+  <meta name="description" content="Rivivi il Corteo Rabadan 2026 con I Sgangheraa: video, foto, programma ufficiale e un piccolo racconto di com’è andata." />
 
+  <style>
+    :root {
+      --bg: #fff9f2;
+      --text: #202020;
+      --accent: #ff7300;
+      --accent2: #ffcc33;
+      --accent3: #7cf0ae;
+      --radius: 18px;
+      --shadow: 0 8px 20px rgba(0,0,0,.15);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, sans-serif;
+      background: var(--bg) url('https://www.transparenttextures.com/patterns/confetti.png');
+      background-size: 400px;
+      color: var(--text);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    img.logo {
+      max-width: 240px;
+      margin: 34px auto 12px;
+      display: block;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,.15));
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin: 0;
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--accent);
+      font-weight: 800;
+      margin: 44px 0 14px;
+    }
+
+    .wrap {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+
+    .subtitle {
+      max-width: 780px;
+      margin: 10px auto 26px;
+      font-size: 1.15rem;
+      opacity: .95;
+    }
+
+    .pill {
+      display: inline-block;
+      background: #fff3d9;
+      padding: 14px 18px;
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      font-weight: 700;
+      margin: 12px auto 18px;
+    }
+
+    .box {
+      background: #e9f7f0;
+      border-radius: var(--radius);
+      padding: 22px;
+      max-width: 820px;
+      margin: 18px auto 26px;
+      box-shadow:
+        0 0 0 3px rgba(124, 240, 174, 0.35),
+        var(--shadow);
+      text-align: left;
+    }
+
+    .box p { margin: 0; }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 14px 0 10px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #111;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      transition: transform .2s;
+    }
+    .cta:hover { transform: scale(1.04); }
+
+    .cta.secondary {
+      background: #fff3d9;
+      border: 2px solid rgba(0,0,0,.08);
+    }
+
+    .video-wrap {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 */
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #000;
+      margin: 18px auto 10px;
+      max-width: 920px;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .small {
+      font-size: .95rem;
+      opacity: .85;
+      margin-top: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 18px auto 0;
+      max-width: 920px;
+    }
+
+    .photo {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 3px solid rgba(255, 204, 51, .65);
+      text-align: left;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo .cap {
+      padding: 12px 14px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .story {
+      background: #fff3d9;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      margin: 18px auto 0;
+      max-width: 920px;
+      text-align: left;
+    }
+
+    .story p { margin: 0 0 12px; }
+    .story p:last-child { margin-bottom: 0; }
+
+    .banner {
+      margin-top: 46px;
+      background: var(--accent);
+      color: white;
+      padding: 22px 10px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: block;
+      transition: background .25s ease;
+    }
+    .banner:hover { background: #ffa733; }
+
+    footer {
+      margin-top: 42px;
+      padding: 24px;
+      background: #f7eecf;
+      font-size: .95rem;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="36B072D6-93D5-4536-93D0-DBE9D4705F8F.png" alt="Logo I Sgangheraa" class="logo" />
+
+  <div class="wrap">
+    <h1>🎭 Corteo Rabadan 2026</h1>
+
+    <div class="subtitle">
+      Una pagina per ricordare una giornata da veri Sgangheraa: gente diversa, strumenti diversi,
+      note discutibili… e divertimento altissimo.
+    </div>
+
+    <div class="pill">
+      🕐 Grande Corteo Mascherato – Domenica 15 febbraio 2026 · 🎺 Numero di partenza <strong>54</strong>
+    </div>
+
+    <div class="cta-row">
+      <a class="cta" href="index.html">⬅ Torna alla Home (Rabadan 2027)</a>
+      <a class="cta secondary" href="2026_PROGRAMMA_CORTEO_DOMENICA.pdf" target="_blank">📄 Programma ufficiale (PDF)</a>
+    </div>
+
+    <h2>🎬 Il video del corteo</h2>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/SsaZksAw9sc"
+        title="Corteo Rabadan 2026 – I Sgangheraa"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="small">Se vuoi, posso aggiungere anche timestamp “best moments” sotto al video.</div>
+
+    <h2>📸 Foto</h2>
+    <div class="box">
+      <p><strong>Come funziona la galleria:</strong> appena carichi altre foto nel repository, le aggiungiamo qui con 1 riga per immagine.</p>
+      <p class="small">Consiglio: nomi file semplici tipo <em>corteo-2026-01.jpg</em>, <em>corteo-2026-02.jpg</em>… così è impossibile sbagliare.</p>
+    </div>
+
+    <div class="grid">
+      <!-- FOTO 1 (già presente nel repo) -->
+      <div class="photo">
+        <img src="36B072D6-93D5-4536-93D0-DBE9D4705F8F.png" alt="I Sgangheraa – Corteo 2026">
+        <div class="cap">I Sgangheraa (versione 2026): logo e spirito.</div>
+      </div>
+
+      <!--
+      TEMPLATE: duplica questo blocco quando carichi nuove foto
+      <div class="photo">
+        <img src="NOMEFILE.jpg" alt="Descrizione">
+        <div class="cap">Didascalia breve.</div>
+      </div>
+      -->
+    </div>
+
+    <h2>📝 Com’è andata</h2>
+    <div class="story">
+      <p>
+        C’è un momento, poco prima di entrare in sfilata, in cui capisci tutto:
+        la gente si sistema la maschera, qualcuno prova due note (sì… due 😅),
+        e qualcun altro dice: “Ma noi… siamo pronti?”
+      </p>
+      <p>
+        La risposta ufficiale degli Sgangheraa è: <strong>“Certo che no!”</strong>
+        Ed è proprio lì che nasce la magia: nessuno deve dimostrare niente,
+        nessuno deve “essere perfetto”. Basta esserci, fare casino con stile,
+        e avere la voglia di divertirsi insieme.
+      </p>
+      <p>
+        Il corteo 2026 è stato questo: una sfilata piena di energia, risate,
+        e quella sensazione bellissima di far parte di qualcosa anche se
+        (soprattutto se) suoni “a modo tuo”.
+      </p>
+      <p>
+        E poi la cosa più bella: vedere le facce della gente che sorride,
+        i bambini che si gasano, e la città che per un pomeriggio diventa
+        un unico grande palco. <strong>Numero 54</strong>, ma cuore 100.
+      </p>
+      <p>
+        Se eri con noi: grazie. Se ci hai visto passare: grazie lo stesso.
+        E se nel 2027 vuoi esserci… lo sai già: <strong>se te gh’è fià, te pò sfilaa!</strong> 🎺🎭
+      </p>
+    </div>
+
+    <a href="https://rabadan.ch" target="_blank" class="banner">
+      🎭 Vai al sito ufficiale del Rabadan
+    </a>
+
+  </div>
+
+  <footer>
+    <p><strong>Contatti:</strong> <a href="mailto:argenteo-80pregio@icloud.com">argenteo-80pregio@icloud.com</a></p>
+    <p>© 2026 I Sgangheraa · Bellinzona</p>
+  </footer>
+
+</body>
+</html>
